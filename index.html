@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de [Votre Nom]</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #222;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[Votre Nom]</h1>
+        <p>Développeur Web | Créatif | Passionné de technologie</p>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Compétences</a>
+            <a href="#cv">CV</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                Bonjour ! Je suis [Votre Nom], développeur web spécialisé en HTML, CSS, JavaScript et plus encore. J'aime créer des sites web modernes, performants et accessibles. Découvrez ci-dessous quelques-uns de mes projets récents.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Projet 1</h3>
+                    <p>Description rapide de votre projet. Expliquez les technologies utilisées et les objectifs atteints.</p>
+                    <a href="#" target="_blank">Voir le projet</a>
+                </div>
+                <div class="project">
+                    <h3>Projet 2</h3>
+                    <p>Description rapide de votre projet. Expliquez les technologies utilisées et les objectifs atteints.</p>
+                    <a href="#" target="_blank">Voir le projet</a>
+                </div>
+                <div class="project">
+                    <h3>Projet 3</h3>
+                    <p>Description rapide de votre projet. Expliquez les technologies utilisées et les objectifs atteints.</p>
+                    <a href="#" target="_blank">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Vous pouvez me contacter à l'adresse suivante : <a href="mailto:votre.email@example.com">votre.email@example.com</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 [Votre Nom] - Portfolio
+    </footer>
+</body>
+</html>
