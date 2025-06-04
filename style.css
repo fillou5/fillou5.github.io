@@ -155,3 +155,80 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+body.dark {
+    background: linear-gradient(135deg, #181926 0%, #232946 100%);
+    color: #f3f6fa;
+}
+
+body.dark header {
+    background: linear-gradient(90deg, #232946 0%, #181926 100%);
+    color: #fff;
+    box-shadow: 0 2px 16px rgba(35,41,70,0.18);
+}
+
+body.dark .container {
+    background: #232946;
+    color: #f3f6fa;
+    box-shadow: 0 4px 32px rgba(35,41,70,0.15);
+}
+
+body.dark h2 {
+    color: #a1a7e7;
+    border-bottom: 2px solid #393e6e;
+}
+
+body.dark .project {
+    background: linear-gradient(120deg, #232946 60%, #181926 100%);
+    border: 1px solid #393e6e;
+    box-shadow: 0 2px 12px rgba(35,41,70,0.13);
+}
+
+body.dark .project h3 {
+    color: #a1a7e7;
+}
+
+body.dark .project p {
+    color: #e0e7ef;
+}
+
+body.dark .project a {
+    background: #393e6e;
+    color: #fff;
+}
+
+body.dark .project a:hover, body.dark .project a:focus {
+    background: #6366f1;
+    color: #fff;
+}
+
+body.dark section#contact a {
+    color: #a1a7e7;
+}
+
+body.dark section#contact a:hover, body.dark section#contact a:focus {
+    color: #fff;
+}
+
+body.dark footer {
+    background: linear-gradient(90deg, #232946 0%, #181926 100%);
+    color: #fff;
+    box-shadow: 0 -2px 16px rgba(35,41,70,0.18);
+}
+
+/* Style du bouton */
+#theme-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    color: #fff;
+    z-index: 10;
+}
+body.dark #theme-toggle {
+    color: #ffd803;
+}

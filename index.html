@@ -10,6 +10,9 @@
 <body>
     <!-- ===== HEADER ===== -->
     <header>
+        <button id="theme-toggle" aria-label="Changer de mode" title="Changer de mode">
+            🌙
+        </button>
         <h1>Théophile Danjoy le goat</h1>
         <p>Développeur Web | Créatif | Passionné de technologie</p>
         <nav>
@@ -68,5 +71,34 @@
     <footer>
         &copy; 2025 Théophile Danjoy - Portfolio
     </footer>
+
+    <script>
+const btn = document.getElementById('theme-toggle');
+const body = document.body;
+
+function setTheme(dark) {
+    if (dark) {
+        body.classList.add('dark');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.remove('dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+btn.addEventListener('click', () => {
+    setTheme(!body.classList.contains('dark'));
+});
+
+// Initialisation au chargement
+if (localStorage.getItem('theme') === 'dark' ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme'))) {
+    setTheme(true);
+} else {
+    setTheme(false);
+}
+</script>
 </body>
 </html>
