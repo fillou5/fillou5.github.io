@@ -14,6 +14,7 @@ header {
     box-shadow: 0 2px 16px rgba(99,102,241,0.08);
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
+    position: relative;
 }
 
 header h1 {
@@ -157,63 +158,62 @@ footer {
 }
 
 body.dark {
-    background: linear-gradient(135deg, #181926 0%, #232946 100%);
-    color: #f3f6fa;
+    background: #000000;
+    color: #1DCD9F;
 }
 
-body.dark header {
-    background: linear-gradient(90deg, #232946 0%, #181926 100%);
-    color: #fff;
-    box-shadow: 0 2px 16px rgba(35,41,70,0.18);
+body.dark header,
+body.dark footer {
+    background: #222222;
+    color: #1DCD9F;
+    box-shadow: 0 2px 16px rgba(22,153,118,0.18);
 }
 
 body.dark .container {
-    background: #232946;
-    color: #f3f6fa;
-    box-shadow: 0 4px 32px rgba(35,41,70,0.15);
+    background: #000000;
+    color: #1DCD9F;
+    box-shadow: 0 4px 32px rgba(22,153,118,0.15);
 }
 
 body.dark h2 {
-    color: #a1a7e7;
-    border-bottom: 2px solid #393e6e;
+    color: #1DCD9F;
+    border-bottom: 2px solid #169976;
 }
 
 body.dark .project {
-    background: linear-gradient(120deg, #232946 60%, #181926 100%);
-    border: 1px solid #393e6e;
-    box-shadow: 0 2px 12px rgba(35,41,70,0.13);
+    background: #222222;
+    border: 1px solid #1DCD9F;
+    box-shadow: 0 2px 12px rgba(22,153,118,0.13);
 }
 
 body.dark .project h3 {
-    color: #a1a7e7;
+    color: #1DCD9F;
 }
 
 body.dark .project p {
-    color: #e0e7ef;
+    color: #1DCD9F;
 }
 
 body.dark .project a {
-    background: #393e6e;
-    color: #fff;
+    background: #1DCD9F;
+    color: #222222;
 }
 
 body.dark .project a:hover, body.dark .project a:focus {
-    background: #6366f1;
+    background: #169976;
     color: #fff;
 }
 
 body.dark section#contact a {
-    color: #a1a7e7;
+    color: #1DCD9F;
 }
 
 body.dark section#contact a:hover, body.dark section#contact a:focus {
-    color: #fff;
+    color: #169976;
 }
 
-body.dark footer {
-    background: linear-gradient(90deg, #232946 0%, #181926 100%);
-    color: #fff;
-    box-shadow: 0 -2px 16px rgba(35,41,70,0.18);
+body.dark #theme-toggle {
+    color: #1DCD9F;
 }
 
 /* Style du bouton */
